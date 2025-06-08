@@ -1,8 +1,37 @@
-# Toward Reliable Biomedical Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models
-
-Here is the repository of our paper: *Toward Reliable Biomedical Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models*.
+# Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models
 
 [![Preprint](https://img.shields.io/badge/preprint-available-brightgreen)](https://arxiv.org/abs/2505.14599)
+[![Dataset](https://img.shields.io/badge/dataset-available-yellow)](https://huggingface.co/TruthHypo)
+
+## News
+- Our paper is accepted to IJCAI 2025!
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Structure](#structure)
+- [Citation](#citation)
+
+## Introduction
+TruthHypo is a benchmark for assessing the capabilities of LLMs in generating truthful scientific hypotheses. This repo also contains the source code of KnowHD, a knowledge-based hallucination detector to evaluate how well hypotheses are grounded in existing knowledge. Our [paper](https://arxiv.org/abs/2505.14599) shows that LLMs struggle to generate truthful hypotheses. By analyzing hallucinations in reasoning steps, we demonstrate that the groundedness scores provided by KnowHD serve as an effective metric for filtering truthful hypotheses from the diverse outputs of LLMs.
+
+## Usage
+The TruthHypo dataset is directly accessible via [HuggingFace](https://huggingface.co/TruthHypo):
+```python
+from datasets import load_dataset
+
+data = load_dataset("TruthHypo/edges_test")
+```
+
+The processed knowledge sources for knowledge-enhanced hypothesis generation can be found at
+- Literature
+  - [PubMed Articles](https://huggingface.co/datasets/MedRAG/pubmed)
+- Knowledge Graph
+  - [PubTator Edges](https://huggingface.co/datasets/TruthHypo/edges_train)
+  - [PubTator Nodes](https://huggingface.co/datasets/TruthHypo/nodes)
+
+## Structure
 
 Our repository contains the following contents:
 - data: the data of TruthHypo benchmark
@@ -23,7 +52,7 @@ Our repository contains the following contents:
 ## Citation
 ```
 @article{xiong2025toward,
-      title={Toward Reliable Biomedical Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models}, 
+      title={Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models}, 
       author={Guangzhi Xiong and Eric Xie and Corey Williams and Myles Kim and Amir Hassan Shariatmadari and Sikun Guo and Stefan Bekiranov and Aidong Zhang},
       journal={arXiv preprint arXiv:2505.14599},
       year={2025}
