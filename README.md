@@ -51,10 +51,27 @@ Our repository contains the following contents:
 
 ## Citation
 ```
-@article{xiong2025toward,
-      title={Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models}, 
-      author={Guangzhi Xiong and Eric Xie and Corey Williams and Myles Kim and Amir Hassan Shariatmadari and Sikun Guo and Stefan Bekiranov and Aidong Zhang},
-      journal={arXiv preprint arXiv:2505.14599},
-      year={2025}
+@inproceedings{xiong2025toward,
+  author       = {Guangzhi Xiong and
+                  Eric Xie and
+                  Corey Williams and
+                  Myles Kim and
+                  Amir Hassan Shariatmadari and
+                  Sikun Guo and
+                  Stefan Bekiranov and
+                  Aidong Zhang},
+  title        = {Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness
+                  and Hallucination in Large Language Models},
+  booktitle    = {Proceedings of the Thirty-Fourth International Joint Conference on
+                  Artificial Intelligence, {IJCAI} 2025, Montreal, Canada, August 16-22,
+                  2025},
+  pages        = {7849--7857},
+  publisher    = {ijcai.org},
+  year         = {2025},
+  url          = {https://doi.org/10.24963/ijcai.2025/873},
+  doi          = {10.24963/IJCAI.2025/873},
+  timestamp    = {Wed, 24 Sep 2025 17:45:28 +0200},
+  biburl       = {https://dblp.org/rec/conf/ijcai/XiongXWKSGBZ25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
